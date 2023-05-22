@@ -5,12 +5,13 @@ import TaskList from "../components/TaskList";
 
 const Home = () => {
     const [tasks, setTasks] = useState([]);
+    const [progress, setProgress] = useState(0);
 
     return (
         <View style={ styles.container }>
                 <Text style={ styles.title }>To Do List</Text>
-                <TaskList style={ styles.list } tasks={ tasks } setTasks={ setTasks } />
-                <ToDoBar style={ styles.bottom } tasks={ tasks } setTasks={ setTasks } />
+                <TaskList tasks={ tasks } setTasks={ setTasks } progress={ progress } setProgress={ setProgress } />
+                <ToDoBar tasks={ tasks } setTasks={ setTasks } progress={ progress } setProgress={ setProgress } />
         </View>
     );
 };
@@ -20,11 +21,11 @@ const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: 'bold',
         color: '#00f',
-        margin: 5,
-        justifyContent: 'flex-start'
+        margin: 10
     }, 
     container: {
-        flexDirection: 'column'
+        justifyContent: 'center',
+        height: '100%'
     }
 });
 

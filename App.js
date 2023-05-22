@@ -6,9 +6,7 @@ export default function App() {
   return (
     <SafeAreaProvider style= { styles.container }>
       <SafeAreaView>
-        <View>
-          <Home />
-        </View>
+        <Home />
       </SafeAreaView>
     </SafeAreaProvider>
   );
@@ -16,7 +14,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    justifyContent: 'center',
     backgroundColor: '#fff',
     padding: 10
   },
