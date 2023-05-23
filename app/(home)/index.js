@@ -137,7 +137,8 @@ const styles = StyleSheet.create({
     },
     container: {
         height: '70%',
-        flexShrink: 100
+        flexShrink: 100,
+        margin: 10
     },
     text: {
         color: '#fff',
@@ -166,12 +167,13 @@ const styles = StyleSheet.create({
         gap: 5
     },
     progress: {
-        margin: 10
+        margin: 15
     },
     header: {
         textAlign: 'center',
         marginTop: 30,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontSize: 16
     }
 });
 
